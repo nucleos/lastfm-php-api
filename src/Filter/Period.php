@@ -11,7 +11,6 @@ declare(strict_types=1);
 
 namespace Nucleos\LastFm\Filter;
 
-
 final class Period
 {
     private string $value;

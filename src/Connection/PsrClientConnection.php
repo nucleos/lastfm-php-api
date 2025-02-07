@@ -45,7 +45,7 @@ final class PsrClientConnection implements ConnectionInterface
             $response = $this->client->sendRequest($request);
         } catch (ClientExceptionInterface $e) {
             throw new ApiException(
-                sprintf('Error fetching page body for url: %s', (string) $request->getUri()),
+                \sprintf('Error fetching page body for url: %s', (string) $request->getUri()),
                 500,
                 $e
             );

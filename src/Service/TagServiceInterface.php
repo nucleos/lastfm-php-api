@@ -28,7 +28,7 @@ interface TagServiceInterface
      * @throws NotFoundException
      * @throws ApiException
      */
-    public function getInfo(string $tag, string $lang = null): ?TagInfo;
+    public function getInfo(string $tag, ?string $lang = null): ?TagInfo;
 
     /**
      * Search for tags similar to this one. Returns tags ranked by similarity, based on listening data.

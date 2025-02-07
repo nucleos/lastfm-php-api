@@ -38,5 +38,5 @@ interface GeoServiceInterface
      * @throws NotFoundException
      * @throws ApiException
      */
-    public function getTopTracks(string $country, string $location = null, $limit = 50, int $page = 1): array;
+    public function getTopTracks(string $country, ?string $location = null, $limit = 50, int $page = 1): array;
 }

@@ -41,7 +41,7 @@ final class ApiClient implements ApiClientInterface
         return $this->sharedSecret;
     }
 
-    public function signedCall(string $method, array $params = [], SessionInterface $session = null, $requestMethod = 'GET'): array
+    public function signedCall(string $method, array $params = [], ?SessionInterface $session = null, $requestMethod = 'GET'): array
     {
         // Call parameter
         $callParams = [

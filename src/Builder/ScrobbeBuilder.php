@@ -47,7 +47,7 @@ final class ScrobbeBuilder
             $keys = array_keys($track);
 
             foreach ($keys as $key) {
-                $query[sprintf('%s[%s]', $key, $i)] = $tracks[$i][$key];
+                $query[\sprintf('%s[%s]', $key, $i)] = $tracks[$i][$key];
             }
         }
 

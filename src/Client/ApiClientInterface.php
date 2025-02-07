@@ -23,7 +23,7 @@ interface ApiClientInterface
      *
      * @throws ApiException
      */
-    public function signedCall(string $method, array $params = [], SessionInterface $session = null, $requestMethod = 'GET'): array;
+    public function signedCall(string $method, array $params = [], ?SessionInterface $session = null, $requestMethod = 'GET'): array;
 
     /**
      * Calls the API unsigned.
