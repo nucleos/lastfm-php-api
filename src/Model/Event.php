@@ -13,7 +13,6 @@ namespace Nucleos\LastFm\Model;
 
 use DateTimeImmutable;
 
-
 final class Event
 {
     private int $eventId;

@@ -52,11 +52,11 @@ final class AuthService implements LoggerAwareInterface, AuthServiceInterface
 
             return new Session($response['session']['name'], $response['session']['key'], $response['session']['subscriber']);
         } catch (ApiException $e) {
-            $this->logger->warning(sprintf('Error getting session for "%s" token.', $token), [
+            $this->logger->warning(\sprintf('Error getting session for "%s" token.', $token), [
                 'exception' => $e,
             ]);
         } catch (NotFoundException $e) {
-            $this->logger->info(sprintf('No session was found for "%s" token.', $token), [
+            $this->logger->info(\sprintf('No session was found for "%s" token.', $token), [
                 'exception' => $e,
             ]);
         }

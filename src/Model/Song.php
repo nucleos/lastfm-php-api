@@ -11,7 +11,6 @@ declare(strict_types=1);
 
 namespace Nucleos\LastFm\Model;
 
-
 final class Song
 {
     private string $name;

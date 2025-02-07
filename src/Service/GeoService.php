@@ -45,7 +45,7 @@ final class GeoService implements GeoServiceInterface
         );
     }
 
-    public function getTopTracks(string $country, string $location = null, $limit = 50, int $page = 1): array
+    public function getTopTracks(string $country, ?string $location = null, $limit = 50, int $page = 1): array
     {
         $response = $this->client->unsignedCall('geo.getTopTracks', [
             'country'  => $country,

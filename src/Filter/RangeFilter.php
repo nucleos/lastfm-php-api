@@ -13,7 +13,6 @@ namespace Nucleos\LastFm\Filter;
 
 use DateTimeImmutable;
 
-
 final class RangeFilter
 {
     private ?DateTimeImmutable $start;

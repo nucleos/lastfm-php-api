@@ -29,7 +29,7 @@ final class TagService implements TagServiceInterface
         $this->client = $client;
     }
 
-    public function getInfo(string $tag, string $lang = null): ?TagInfo
+    public function getInfo(string $tag, ?string $lang = null): ?TagInfo
     {
         $response = $this->client->unsignedCall('tag.getInfo', [
             'tag'  => $tag,
