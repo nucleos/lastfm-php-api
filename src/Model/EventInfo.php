@@ -14,8 +14,6 @@ namespace Nucleos\LastFm\Model;
 use DateTimeImmutable;
 
 /**
- * @psalm-immutable
- *
  * @SuppressWarnings(PHPMD.ExcessiveParameterList)
  */
 final class EventInfo

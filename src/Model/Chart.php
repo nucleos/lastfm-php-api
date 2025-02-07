@@ -14,9 +14,7 @@ namespace Nucleos\LastFm\Model;
 use DateTimeImmutable;
 use Nucleos\LastFm\Exception\ApiException;
 
-/**
- * @psalm-immutable
- */
+
 final class Chart
 {
     private DateTimeImmutable $from;
