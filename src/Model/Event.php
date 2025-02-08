@@ -49,7 +49,7 @@ final class Event
         return $this->eventDate;
     }
 
-    public function getUrl(): ?string
+    public function getUrl(): string
     {
         return $this->url;
     }
