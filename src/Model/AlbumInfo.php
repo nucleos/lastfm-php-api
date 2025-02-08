@@ -12,7 +12,7 @@ declare(strict_types=1);
 namespace Nucleos\LastFm\Model;
 
 /**
- * @SuppressWarnings(PHPMD.ExcessiveParameterList)
+ * @SuppressWarnings("PHPMD.ExcessiveParameterList")
  */
 final class AlbumInfo
 {
